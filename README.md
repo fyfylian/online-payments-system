@@ -1,4 +1,4 @@
-# Adyen [online payment](https://docs.adyen.com/checkout) integration demos
+# FYFY [online payment](https://docs.fyfy.io/checkout) integration demos
 
 This repository includes examples of PCI-compliant UI integrations for online payments with Adyen. Within this demo app, you'll find a simplified version of an e-commerce website, complete with commented code to highlight key features and concepts of Adyen's API. Check out the underlying code to see how you can integrate Adyen to give your shoppers the option to pay with their preferred payment methods, all in a seamless checkout experience.
 
@@ -8,8 +8,8 @@ This repository includes examples of PCI-compliant UI integrations for online pa
 
 **Node.js + Express** demos of the following client-side integrations are currently available in this repository:
 
-- [Drop-in](https://docs.adyen.com/checkout/drop-in-web)
-- [Component](https://docs.adyen.com/checkout/components-web)
+- [Drop-in](https://docs.fyfy.io/checkout/drop-in-web)
+- [Component](https://docs.fyfy.io/checkout/components-web)
   - ACH
   - Alipay
   - Boleto Bancário
@@ -21,7 +21,7 @@ This repository includes examples of PCI-compliant UI integrations for online pa
   - SEPA Direct Debit
   - SOFORT
 
-Each demo leverages Adyen's API Library for Node.js ([GitHub](https://github.com/Adyen/adyen-node-api-library) | [Docs](https://docs.adyen.com/development-resources/libraries#javascript)). See **./util/api.js** for API functions.
+Each demo leverages API Library for Node.js ([GitHub](https://github.com/fyfylian/fyfy-node-api-library) | [Docs](https://docs.fyfy.io/development-resources/libraries#javascript)). See **./util/api.js** for API functions.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ Node.js 8.0+
 1. Clone this repo:
 
 ```
-git clone https://github.com/adyen-examples/adyen-node-online-payments.git
+git clone https://github.com/fyfylian/online-payments-system.git
 ```
 
 2. Navigate to the root directory and install dependencies:
@@ -43,7 +43,7 @@ npm install
 
 ## Usage
 
-1. Create a `./.env` file with your [API key](https://docs.adyen.com/user-management/how-to-get-the-api-key), [Client Key](https://docs.adyen.com/user-management/client-side-authentication) - Remember to add `http://localhost:8080` as an origin for client key, and merchant account name (all credentials are in string format):
+1. Create a `./.env` file with your [API key](https://docs.fyfy.io http://localhost:8080` as an origin for client key, and merchant account name (all credentials are in string format):
 
 ```
 API_KEY="your_API_key_here"
